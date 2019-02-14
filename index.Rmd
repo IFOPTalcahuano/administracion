@@ -1,0 +1,38 @@
+---
+title: "IFOP"
+author: ""
+date: ""
+output:
+  html_document:
+    fig_caption: yes
+    highlight: haddock
+    keep_md: yes
+    number_sections: yes
+    theme: cerulean  
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+  html_notebook: default
+editor_options: 
+  chunk_output_type: inline
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+knitr::opts_chunk$set(results = 'asis')
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(fig.width  = 7)
+knitr::opts_chunk$set(fig.height = 4)
+```
+
+```{r}
+
+```
+
+<img src="https://www.ifop.cl/wp-content/uploads/2017/10/base-talcahuano-2-960x350.png">
+
+
+
+
+

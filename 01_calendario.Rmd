@@ -1,0 +1,51 @@
+---
+title: "Calendario"
+#author: "Jorge Cornejo"
+#date: "14 de febrero de 2019"
+output:
+  html_document:
+    highlight: haddock
+    number_sections: yes
+    theme: cerulean  
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+  html_notebook: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F)
+knitr::opts_chunk$set(results = 'asis')
+knitr::opts_chunk$set(warning = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(fig.width  = 9)
+knitr::opts_chunk$set(fig.height = 7)
+```
+
+
+
+```{r read}
+rm(list = ls())
+iTime <- Sys.time()
+```
+
+
+
+
+
+```{r}
+hms_span <- function(start, end) {
+  dsec <- as.numeric(difftime(end, start, unit = "secs"))
+  hours <- floor(dsec / 3600)
+  minutes <- floor((dsec - 3600 * hours) / 60)
+  seconds <- dsec - 3600*hours - 60*minutes
+  paste0(
+    sapply(c(hours, minutes, seconds), function(x) {
+      formatC(x, width = 2, format = "d", flag = "0")
+    }), collapse = ":")
+}
+eTime <- Sys.time()
+cat('**Time running:', hms_span(iTime, eTime), "**")
+
+```
+

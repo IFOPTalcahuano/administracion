@@ -1,0 +1,15 @@
+name: IFOP Talcahuano
+navbar:
+  title: Inicio
+  left:
+  - text: Calendario
+    href: 01_calenadrio.html
+
+output_dir: _site
+output:
+  html_document:
+    theme: flatly
+    highlight: zenburn
+    lib_dir: site_libs
+    self_contained: no
+
