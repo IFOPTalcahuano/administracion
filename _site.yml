@@ -3,7 +3,7 @@ navbar:
   title: Inicio
   left:
   - text: Calendario
-    href: 01_calenadrio.html
+    href: 01_calendario.html
 
 output_dir: _site
 output:
